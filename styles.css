@@ -1,0 +1,146 @@
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #00f7ff;
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 30px;
+    min-height: 100vh;          
+    text-align: center;
+    background-image: url(https://media1.tenor.com/m/et-nlIc522MAAAAC/gtr.gif);
+    background-repeat: no-repeat;    
+    background-size: cover;            
+    background-position: center;       
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+#id1 {
+    font-size: 3em;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    margin-bottom: 10px;
+}
+
+.hi {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.expectations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.myDIV {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.85), rgba(10, 10, 10, 0.9));
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #00f7ff;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+}
+
+.myDIV h2 {
+    color: #00f7ff;
+    margin-bottom: 10px;
+}
+
+.myDIV ul {
+    list-style: none;
+    padding: 0;
+}
+
+.myDIV ul li {
+    margin: 8px 0;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+#button, #prevButton {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 28px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #00f7ff, #007bff);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px #00f7ff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#button:hover, #prevButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00f7ff, 0 0 50px #00f7ff;
+}
+
+/* Ripple effect */
+#button:after, #prevButton:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.4s ease-out;
+    pointer-events: none;
+}
+
+#button:active:after, #prevButton:active:after {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0s;
+}
+
+#intro-container {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#intro-container h2 {
+    font-size: 1.8rem;
+    color: #00e0ff;
+    margin: 5px 0;
+}
+
+#intro-container h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 5px 0;
+    text-shadow: 0 0 10px #00e0ff;
+}

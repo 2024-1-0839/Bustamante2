@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    
+
+    <div id="intro-container">
+        <h2>I'm back</h2>
+        <h1 class="hi">Hi, my name is Blessed Joshua G. Bustamante</h1>
+    </div>
+
+    <img src="assets/tom hardy.jpg" alt="Portrait of Blessed Joshua G. Bustamante">
+
+    <div class="expectations-container">
+
+        <div class="myDIV">
+            <h2>Class Expectations</h2>
+            <ul>
+                <li>I expect to learn topics easily.</li>
+                <li>I expect to get to know my classmates more.</li>
+                <li>I expect to learn valuable topics.</li>
+            </ul>
+        </div>
+
+        <div class="myDIV">
+            <h2>Subject Expectations</h2>
+            <ul>
+                <li>I expect to learn more about JS.</li>
+                <li>I expect to elevate my existing knowledge about HTML, CSS, and PHP.</li>
+                <li>I expect to learn a lot more than I currently know.</li>
+            </ul>
+        </div>
+
+        <div class="myDIV">
+            <h2>Future PHP Projects</h2>
+            <ul>
+                <li>Simple task managing system.</li>
+                <li>Simple grades calculator.</li>
+                <li>Simple functional website.</li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <div class="button-container">
+        <button onclick="previousBackground()" id="prevButton">Previous Background</button>
+        <button onclick="changeBackground()" id="button">Change Background</button>
+    </div>
+
+    <script>
+
+        let originalBackground = "url(https://media1.tenor.com/m/et-nlIc522MAAAAC/gtr.gif)";
+
+        function myFunction() {
+            document.getElementById("myDIV").style.backgroundColor = "lightblue";
+        }
+
+        function changeBackground() {
+            document.body.style.backgroundImage = "url(https://media1.tenor.com/m/dMPa2_346UgAAAAC/tag.gif)";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+        }
+
+        function previousBackground() {
+            document.body.style.backgroundImage = originalBackground;
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+        }
+    </script>
+
+</body>
+</html>
